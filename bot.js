@@ -79,32 +79,25 @@ client.unload = command => {
 
 client.on('message', msg => {
   if (msg.content === 'Hello Bot') {
-		if (!msg.guild.member(msg.author).hasPermission("BAN_MEMBERS")) {
-			msg.author.sendMessage('hello im chara bot :p');
-		} else {
+
 		msg.reply('hello im chara bot :p');
-		}
 	}
 });
 
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'hi bot') {
-		if (!msg.guild.member(msg.author).hasPermission("BAN_MEMBERS")) {
-			msg.author.sendMessage('hi im chara bot :p');
-		} else {
+
 		msg.reply('hi im chara bot :p');
-		}
+	
 	}
 });
 
 client.on('message', msg => {
   if (msg.content === 'Good Morning') {
-		if (!msg.guild.member(msg.author).hasPermission("BAN_MEMBERS")) {
-			msg.author.sendMessage('Good morning!');
-		} else {
+
 		msg.reply('Good morning!');
-		}
+		
 	}
 });
 
@@ -112,11 +105,9 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'Bot what are you doing') {
-		if (!msg.guild.member(msg.author).hasPermission("BAN_MEMBERS")) {
-			msg.author.sendMessage('I expect nothing new code :/ .');
-		} else {
+
 		msg.reply('I expect nothing new code :/ ');
-		}
+		
 	}
 });
 
