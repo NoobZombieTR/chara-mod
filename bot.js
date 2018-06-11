@@ -131,7 +131,7 @@ client.elevation = message => {
   return permlvl;
 };
 
-var regToken = "tokeni yazcam buraya"
+var regToken = process.env.token
 
 client.on('warn', e => {
   console.log(chalk.bgYellow(e.replace(regToken, 'that was redacted')));
